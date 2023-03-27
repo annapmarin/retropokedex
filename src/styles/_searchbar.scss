@@ -1,0 +1,25 @@
+.search-bar {
+  &__input {
+    position: absolute;
+    right: rem(-20);
+    top: rem(-120);
+    height: rem(30);
+    width: rem(180);
+    text-align: center;
+
+    &::placeholder {
+      font-size: rem(11);
+    }
+  }
+
+  &__button {
+    position: absolute;
+    right: rem(-20);
+    top: rem(-80);
+    width: rem(180);
+    border-radius: rem(20);
+    background-color: $amarillo;
+    color: $negro;
+    cursor: pointer;
+  }
+}

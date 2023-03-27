@@ -1,0 +1,13 @@
+// Colores
+$rojo: #fd1956;
+$negro: #00064f;
+$blanco: #f2f4e8;
+$azul: #00dbfc;
+$verde: #30f455;
+$naranja: #fa8d51;
+$amarillo: #f9ee60;
+
+// Conversor de px a rem
+@function rem($pixels, $context: 16) {
+  @return ($pixels / $context) * 1rem;
+}

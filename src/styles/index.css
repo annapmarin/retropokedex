@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+.container {
+  display: flex;
+  justify-content: center;
+  justify-content: center;
+}
+
+.interface {
+  background-color: #fd1956;
+  width: 25rem;
+  height: 34.375rem;
+  position: relative;
+  border-radius: 0.25rem;
+  box-shadow: -0.3125rem 0.3125rem #00064f;
+}
+.interface__camera__border {
+  width: 4.375rem;
+  height: 5rem;
+  background-color: #f2f4e8;
+  border-radius: 50%;
+  position: absolute;
+  left: 2.5rem;
+  top: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.interface__camera__lens {
+  width: 3.75rem;
+  height: 3.75rem;
+  background-color: #00dbfc;
+  border-radius: 50%;
+  border: 0.3125rem solid #00064f;
+  position: relative;
+}
+.interface__camera__lens__bright {
+  width: 0.9375rem;
+  height: 0.9375rem;
+  border-radius: 50%;
+  background-color: #f2f4e8;
+  position: absolute;
+  left: 0.625rem;
+  top: 0.625rem;
+}
+.interface__display {
+  width: 21.875rem;
+  height: 18.75rem;
+  background-color: #f2f4e8;
+  position: absolute;
+  left: 1.5625rem;
+  top: 9.375rem;
+  border-radius: 0.3125rem 0.3125rem 0.3125rem 5rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.3125rem;
+}
+.interface__display__detail {
+  width: 0.625rem;
+  height: 0.625rem;
+  background-color: #fd1956;
+  border-radius: 50%;
+  margin-top: 0.3125rem;
+}
+.interface__display__info {
+  position: absolute;
+  width: 18.75rem;
+  height: 15.625rem;
+  background-color: #00dbfc;
+  top: 1.75rem;
+  border-radius: 0.3125rem 0.3125rem 0.3125rem 5rem;
+  padding: 1.25rem;
+  font-size: 0.8125rem;
+}
+.interface__buttons__blue {
+  width: 2.5rem;
+  height: 2.5rem;
+  position: absolute;
+  bottom: 3.125rem;
+  left: 1.875rem;
+  border-radius: 50%;
+  background-color: rgb(79, 144, 179);
+  cursor: pointer;
+}
+.interface__buttons__green {
+  width: 2.5rem;
+  height: 0.625rem;
+  position: absolute;
+  bottom: 4.0625rem;
+  left: 5.625rem;
+  border-radius: 0.625rem;
+  background-color: #30f455;
+  cursor: pointer;
+}
+.interface__buttons__orange {
+  width: 2.5rem;
+  height: 0.625rem;
+  position: absolute;
+  bottom: 4.0625rem;
+  left: 8.75rem;
+  border-radius: 0.625rem;
+  background-color: #fa8d51;
+  cursor: pointer;
+}
+
+.PokeApi {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+}
+.PokeApi h1 {
+  font-size: 1rem;
+  text-align: center;
+  text-transform: capitalize;
+  text-shadow: 0.03125rem 0.03125rem #fd1956;
+}
+
+.info-pkm {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.25rem;
+}
+.info-pkm__image {
+  min-height: 8.75rem;
+  min-width: 6.25rem;
+  max-height: 10rem;
+  max-width: 12.5rem;
+}
+.info-pkm__data {
+  text-align: right;
+  font-size: 0.6875rem;
+}
+
+.next, .prev {
+  width: 1.875rem;
+  height: 1.875rem;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  position: absolute;
+}
+
+.button-unactive {
+  display: none;
+}
+
+.next:hover,
+.prev:hover,
+.next:active,
+.prev:active {
+  background-color: hsla(0, 0%, 100%, 0.517);
+  border-radius: 50%;
+}
+
+.prev {
+  transform: rotateY(180deg);
+  left: 0.625rem;
+  top: 6.875rem;
+}
+
+.next {
+  right: 0.625rem;
+  top: 6.875rem;
+}
+
+.search-bar__input {
+  position: absolute;
+  right: -1.25rem;
+  top: -7.5rem;
+  height: 1.875rem;
+  width: 11.25rem;
+  text-align: center;
+}
+.search-bar__input::-moz-placeholder {
+  font-size: 0.6875rem;
+}
+.search-bar__input::placeholder {
+  font-size: 0.6875rem;
+}
+.search-bar__button {
+  position: absolute;
+  right: -1.25rem;
+  top: -5rem;
+  width: 11.25rem;
+  border-radius: 1.25rem;
+  background-color: #f9ee60;
+  color: #00064f;
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Mono", monospace;
+}
+
+body {
+  font-size: 16px;
+  background-image: url(../images/background.jpg);
+  background-repeat: no-repeat;
+}
+
+.header {
+  text-align: center;
+  margin-top: 1.25rem;
+  background-color: #fd1956;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 1.25rem auto;
+  padding: 0.625rem 1.25rem;
+  box-shadow: 3px 3px #00064f;
+}
+.header__title {
+  color: #00064f;
+  font-size: 1.125rem;
+}/*# sourceMappingURL=index.css.map */
