@@ -1,0 +1,48 @@
+.more-info {
+  &__button {
+    position: absolute;
+    right: rem(15);
+    bottom: rem(15);
+    padding: rem(5);
+    border-radius: rem(20);
+    background-color: $amarillo;
+    border: none;
+    cursor: pointer;
+    font-size: rem(12)
+  }
+
+  &__panel {
+    width: rem(250);
+    height: rem(180);
+    background-color: hsla(56, 93%, 68%, 0.9);
+    position: absolute;
+    top: rem(40);
+    left: rem(25);
+    border-radius: rem(20) rem(20) rem(20) rem(50);
+  }
+
+  &__close {
+    width: rem(30);
+    position: absolute;
+    right: rem(10);
+    top: rem(10);
+    cursor: pointer;
+  }
+
+  &__data {
+    position: absolute;
+    top: rem(60);
+    left: 50%;
+    transform: translateX(-55%);
+    z-index: 1;
+
+    &__type {
+      margin-top: rem(8);
+      padding-right: rem(5);
+    }
+  }
+}
+
+.hidden {
+  display: none;
+}

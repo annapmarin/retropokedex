@@ -2,11 +2,13 @@ import { useEffect, useState } from 'react';
 import ImgNotFound from '../images/no-image-icon-15.png';
 import nextImg from '../images/next.svg';
 import SearchBar from './searchbar';
+import MoreInfo from './moreinfo';
+import { typesImgs } from './typesimg';
 
-  // (x) TODO: return 'The pokemon XXXXX is not found' if the search is not found
+  // (X) TODO: return 'The pokemon XXXXX is not found' if the search is not found
   // () TODO: return a positive result if the search matches the beginning of the name, or if the search almost matches the name (RegEx)
   // () TODO: create buttons to jump faster into the pokemon generation the user is looking for
-  // () TODO: create a '+ info' button and div(fetch data) to access the pokemon details
+  // (X) TODO: create a '+ info' button and div(fetch data) to access the pokemon details
 
 export default function PokeApi() {
   const [isLoading, setIsLoading] = useState(true);
@@ -39,6 +41,7 @@ export default function PokeApi() {
     const response = await fetch(`https://pokeapi.co/api/v2/pokemon/?offset=0&limit=1280`)
     let dataPkm = await response.json();
     let filteredArray = dataPkm.results.filter(element => element.name === string);
+    
     if(filteredArray.length > 0) {
       let filteredURL = filteredArray.map(element => element.url);
       let stringURL = filteredURL.toString();
@@ -52,6 +55,21 @@ export default function PokeApi() {
     } else if (filteredArray.length === 0) {
       setNotFound(string)
     }
+  }
+
+  // Method 2.3 -> Not found
+  if(notFound !== '') {
+    return (
+      <>
+        <SearchBar sendSearch={handleSearch} />
+        <div className='PokeApi'>
+          <p>'{notFound}' was not found</p>
+          <div className="info-pkm">
+            <img className='info-pkm__image' src={ImgNotFound} />
+          </div>
+        </div>
+      </>
+    )
   }
 
   // Next Pokemon
@@ -68,6 +86,30 @@ export default function PokeApi() {
   }
 }
 
+ // Show Pokemon data
+  const PokemonData = (boolean) => {
+    if (boolean === true) { // Closed window
+      document.getElementById('pkmn-info').style.display = 'none';
+    } else if (boolean === false) { // Opened window
+      document.getElementById('pkmn-info').style.display = 'block';
+    }
+  }
+
+  // Handle Type Image
+    const handleImage = () => {
+    for (let i = 0; i < typesImgs.length; i++) {
+      if (typesImgs[i].name === data.types[0].type.name) {
+        return typesImgs[i].image
+     }
+  }}
+
+  const handleImage2 = () => {
+    for (let i = 0; i < typesImgs.length; i++) {
+      if (typesImgs[i].name === data.types[1].type.name) {
+        return typesImgs[i].image
+  }}}
+
+
   // Loading state
   if (isLoading) {
     return (
@@ -77,20 +119,6 @@ export default function PokeApi() {
     );
   }
 
-  // Not found state
-  if(notFound !== '') {
-    return (
-      <>
-        <SearchBar sendSearch={handleSearch} />
-        <div className='PokeApi'>
-          <p>'{notFound}' was not found</p>
-          <div className="info-pkm">
-            <img className='info-pkm__image' src={ImgNotFound} />
-          </div>
-        </div>
-      </>
-    )
-  }
 
   return (
     <>
@@ -106,11 +134,17 @@ export default function PokeApi() {
         <button className='next' onClick={nextPkm}>
           <img src={nextImg} />
         </button>
-      {/* <div class="info-pkm__data">
+    
+      <MoreInfo sendClick={PokemonData} />
+        <div id='pkmn-info' className='hidden more-info__data'>
         <p>Weight: {data.weight / 10}kg</p>
         <p>Height: {data.height * 10}cm</p>
-      </div> */}
+        <p>Type:</p>
+        <img className='more-info__data__type' src={handleImage()} />
+        <img className='more-info__data__type' src={data.types[1] ? handleImage2() : ''} />
+        </div>
       </div>
+      
     </div>
     </>
   )
