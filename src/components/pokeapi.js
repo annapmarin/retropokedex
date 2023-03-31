@@ -35,9 +35,10 @@ export default function PokeApi() {
 
   // Method 2.2 (searchbar -> it's a name, so filter the array to find the name and return the array where the name belongs, then map the returned array to access the URL and set the data and the number of the search)
   async function searchPokemonByName(string) {
+    const stringLowerCased = string.toLowerCase();
     const response = await fetch(`https://pokeapi.co/api/v2/pokemon/?offset=0&limit=1280`)
     let dataPkm = await response.json();
-    let filteredArray = dataPkm.results.filter(element => element.name === string);
+    let filteredArray = dataPkm.results.filter(element => element.name === stringLowerCased);
     
     if(filteredArray.length > 0) {
       let filteredURL = filteredArray.map(element => element.url);
