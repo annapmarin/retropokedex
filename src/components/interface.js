@@ -1,5 +1,4 @@
 import PokeApi from "./pokeapi";
-import SearchBar from "./searchbar";
 
 function Interface() {
   return(

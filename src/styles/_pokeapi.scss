@@ -32,6 +32,17 @@
     text-align: right;
     font-size: rem(11)
   }
+
+  &__return {
+    position: absolute;
+    width: rem(40);
+    height: rem(40);
+    bottom: rem(10);
+    right: rem(10);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
 }
 
 .next, .prev {

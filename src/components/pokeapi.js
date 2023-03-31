@@ -5,6 +5,7 @@ import SearchBar from './searchbar';
 import MoreInfo from './moreinfo';
 import GenButtons from './genbuttons';
 import { typesImgs } from './typesimg';
+import returnArrow from '../images/return-arrow.svg';
 
 export default function PokeApi() {
   const [isLoading, setIsLoading] = useState(true);
@@ -53,7 +54,13 @@ export default function PokeApi() {
     }
   }
 
-  // Method 2.3 -> Not found
+  // Method 2.3 -> Return to the pokemon list
+    const returnToPkm = () => {
+      setNotFound('');
+      setNum(1);
+    } 
+
+  // Method 2.4 -> Not found
   if(notFound !== '') {
     return (
       <>
@@ -62,6 +69,18 @@ export default function PokeApi() {
           <p>'{notFound}' was not found</p>
           <div className="info-pkm">
             <img className='info-pkm__image' src={ImgNotFound} />
+            <button className='info-pkm__return'><img src={returnArrow} onClick={returnToPkm} /></button>
+
+            <GenButtons 
+        goTo1stGen={() => setNum(1)} 
+        goTo2ndGen={() => setNum(152)} 
+        goTo3rdGen={() => setNum(252)} 
+        goTo4thGen={() => setNum(387)} 
+        goTo5thGen={() => setNum(495)}
+        goTo6thGen={() => setNum(650)}
+        goTo7thGen={() => setNum(722)}
+        goTo8thGen={() => setNum(810)}
+        goTo9thGen={() => setNum(906)} />
           </div>
         </div>
       </>
