@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/retropokedex/static/css/main.417a897c.css",
+    "main.css": "/retropokedex/static/css/main.af8cfbc6.css",
     "main.js": "/retropokedex/static/js/main.42a2eac9.js",
     "static/js/787.20ea48e4.chunk.js": "/retropokedex/static/js/787.20ea48e4.chunk.js",
     "static/media/background.jpg": "/retropokedex/static/media/background.d9a21c05f3c8a3e4899d.jpg",
@@ -27,12 +27,12 @@
     "index.html": "/retropokedex/index.html",
     "static/media/return-arrow.svg": "/retropokedex/static/media/return-arrow.14c5c27cca047977b3f49f053851db1e.svg",
     "static/media/Type_Uknown.webp": "/retropokedex/static/media/Type_Uknown.c8ef84d52de842da1e96.webp",
-    "main.417a897c.css.map": "/retropokedex/static/css/main.417a897c.css.map",
+    "main.af8cfbc6.css.map": "/retropokedex/static/css/main.af8cfbc6.css.map",
     "main.42a2eac9.js.map": "/retropokedex/static/js/main.42a2eac9.js.map",
     "787.20ea48e4.chunk.js.map": "/retropokedex/static/js/787.20ea48e4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.417a897c.css",
+    "static/css/main.af8cfbc6.css",
     "static/js/main.42a2eac9.js"
   ]
 }
