@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/retropokedex/static/css/main.bce5a39b.css",
+    "main.js": "/retropokedex/static/js/main.5fe7322a.js",
+    "static/js/787.20ea48e4.chunk.js": "/retropokedex/static/js/787.20ea48e4.chunk.js",
+    "static/media/background.jpg": "/retropokedex/static/media/background.d9a21c05f3c8a3e4899d.jpg",
+    "static/media/Type_Psychic.webp": "/retropokedex/static/media/Type_Psychic.0902bdbf251a55d32350.webp",
+    "static/media/Type_Electric.webp": "/retropokedex/static/media/Type_Electric.f04bfecb29a9f3a22e10.webp",
+    "static/media/next.svg": "/retropokedex/static/media/next.f8a6a478ba7da643bb80abfdb7fa22eb.svg",
+    "static/media/Type_Water.webp": "/retropokedex/static/media/Type_Water.28d13535022a79094ba0.webp",
+    "static/media/Type_Flying.webp": "/retropokedex/static/media/Type_Flying.c98cfbf2bf8cb0c6a09d.webp",
+    "static/media/Type_Ground.webp": "/retropokedex/static/media/Type_Ground.f11e0ffdd11654108b71.webp",
+    "static/media/Type_Fairy.webp": "/retropokedex/static/media/Type_Fairy.600af0f2f69860fe9024.webp",
+    "static/media/Type_Fighting.webp": "/retropokedex/static/media/Type_Fighting.055e63111daca2c9a51a.webp",
+    "static/media/Type_Dragon.webp": "/retropokedex/static/media/Type_Dragon.3d059ca26e5a979cc270.webp",
+    "static/media/Type_Grass.webp": "/retropokedex/static/media/Type_Grass.b0856ce836ae3f7d2952.webp",
+    "static/media/Type_Rock.webp": "/retropokedex/static/media/Type_Rock.c1c040c180791a48414e.webp",
+    "static/media/Type_Fire.webp": "/retropokedex/static/media/Type_Fire.0707602ec6dab738f311.webp",
+    "static/media/Type_Poison.webp": "/retropokedex/static/media/Type_Poison.cdc5f0f4cbaecea4633f.webp",
+    "static/media/Type_Dark.webp": "/retropokedex/static/media/Type_Dark.20223c2af899b3d438e5.webp",
+    "static/media/Type_Bug.webp": "/retropokedex/static/media/Type_Bug.1b322e2234cb692a53a2.webp",
+    "static/media/Type_Normal.webp": "/retropokedex/static/media/Type_Normal.ae2c83db403fdd44699b.webp",
+    "static/media/closeimg.svg": "/retropokedex/static/media/closeimg.83ab199e93202038a74994f544ce1d6b.svg",
+    "static/media/Type_Ice.webp": "/retropokedex/static/media/Type_Ice.2b4bd2b557566d6f5071.webp",
+    "static/media/Type_Ghost.webp": "/retropokedex/static/media/Type_Ghost.4e76c7a62425d246bc57.webp",
+    "static/media/Type_Steel.webp": "/retropokedex/static/media/Type_Steel.7796fcdc72bcae597fe2.webp",
+    "index.html": "/retropokedex/index.html",
+    "static/media/Type_Uknown.webp": "/retropokedex/static/media/Type_Uknown.c8ef84d52de842da1e96.webp",
+    "main.bce5a39b.css.map": "/retropokedex/static/css/main.bce5a39b.css.map",
+    "main.5fe7322a.js.map": "/retropokedex/static/js/main.5fe7322a.js.map",
+    "787.20ea48e4.chunk.js.map": "/retropokedex/static/js/787.20ea48e4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bce5a39b.css",
+    "static/js/main.5fe7322a.js"
+  ]
+}
