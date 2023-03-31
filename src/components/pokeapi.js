@@ -3,12 +3,8 @@ import ImgNotFound from '../images/no-image-icon-15.png';
 import nextImg from '../images/next.svg';
 import SearchBar from './searchbar';
 import MoreInfo from './moreinfo';
+import GenButtons from './genbuttons';
 import { typesImgs } from './typesimg';
-
-  // (X) TODO: return 'The pokemon XXXXX is not found' if the search is not found
-  // () TODO: return a positive result if the search matches the beginning of the name, or if the search almost matches the name (RegEx)
-  // () TODO: create buttons to jump faster into the pokemon generation the user is looking for
-  // (X) TODO: create a '+ info' button and div(fetch data) to access the pokemon details
 
 export default function PokeApi() {
   const [isLoading, setIsLoading] = useState(true);
@@ -131,7 +127,7 @@ export default function PokeApi() {
           <img src={nextImg} /> 
         </button>
         <img className='info-pkm__image' src={data.sprites.other.dream_world.front_default ? data.sprites.other.dream_world.front_default : (data.sprites.front_default ? data.sprites.front_default : ImgNotFound)} />
-        <button className='next' onClick={nextPkm}>
+        <button className={num <= 1009 ? 'next' : 'button-unactive'} onClick={nextPkm}>
           <img src={nextImg} />
         </button>
     
@@ -143,8 +139,18 @@ export default function PokeApi() {
         <img className='more-info__data__type' src={handleImage()} />
         <img className='more-info__data__type' src={data.types[1] ? handleImage2() : ''} />
         </div>
+
+      <GenButtons 
+        goTo1stGen={() => setNum(1)} 
+        goTo2ndGen={() => setNum(152)} 
+        goTo3rdGen={() => setNum(252)} 
+        goTo4thGen={() => setNum(387)} 
+        goTo5thGen={() => setNum(495)}
+        goTo6thGen={() => setNum(650)}
+        goTo7thGen={() => setNum(722)}
+        goTo8thGen={() => setNum(810)}
+        goTo9thGen={() => setNum(906)} />
       </div>
-      
     </div>
     </>
   )

@@ -71,6 +71,15 @@
   padding: 1.25rem;
   font-size: 0.8125rem;
 }
+.interface__buttons {
+  position: absolute;
+  bottom: -8.75rem;
+  left: -1.875rem;
+}
+.interface__buttons button p {
+  font-size: 0.5rem;
+  margin: -1.0625rem;
+}
 .interface__buttons__blue {
   width: 2.5rem;
   height: 2.5rem;
@@ -79,6 +88,8 @@
   left: 1.875rem;
   border-radius: 50%;
   background-color: rgb(79, 144, 179);
+  color: white;
+  font-size: 0.625rem;
   cursor: pointer;
 }
 .interface__buttons__green {
@@ -99,6 +110,66 @@
   left: 8.75rem;
   border-radius: 0.625rem;
   background-color: #fa8d51;
+  cursor: pointer;
+}
+.interface__buttons__yellow {
+  width: 2.5rem;
+  height: 0.625rem;
+  position: absolute;
+  bottom: 4.0625rem;
+  left: 11.875rem;
+  border-radius: 0.625rem;
+  background-color: #f9ee60;
+  cursor: pointer;
+}
+.interface__buttons__cian {
+  width: 2.5rem;
+  height: 0.625rem;
+  position: absolute;
+  bottom: 4.0625rem;
+  left: 15rem;
+  border-radius: 0.625rem;
+  background-color: #00dbfc;
+  cursor: pointer;
+}
+.interface__buttons__white {
+  width: 2.5rem;
+  height: 0.625rem;
+  position: absolute;
+  bottom: 4.0625rem;
+  left: 18.125rem;
+  border-radius: 0.625rem;
+  background-color: #f2f4e8;
+  cursor: pointer;
+}
+.interface__buttons__pink {
+  width: 2.5rem;
+  height: 0.625rem;
+  position: absolute;
+  bottom: 2.5rem;
+  left: 8.75rem;
+  border-radius: 0.625rem;
+  background-color: rgb(203, 106, 229);
+  cursor: pointer;
+}
+.interface__buttons__turquoise {
+  width: 2.5rem;
+  height: 0.625rem;
+  position: absolute;
+  bottom: 2.5rem;
+  left: 11.875rem;
+  border-radius: 0.625rem;
+  background-color: #3586dc;
+  cursor: pointer;
+}
+.interface__buttons__brown {
+  width: 2.5rem;
+  height: 0.625rem;
+  position: absolute;
+  bottom: 2.5rem;
+  left: 15rem;
+  border-radius: 0.625rem;
+  background-color: #D2B48C;
   cursor: pointer;
 }
 

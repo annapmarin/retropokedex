@@ -20,11 +20,6 @@ function Interface() {
             <PokeApi />
           </div>
         </div>
-        <div className='interface__buttons'>
-            <button className='interface__buttons__blue'></button>
-            <button className='interface__buttons__green'></button>
-            <button className='interface__buttons__orange'></button>
-        </div>
       </div>
     </div>
     </>
