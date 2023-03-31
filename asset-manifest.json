@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/retropokedex/static/css/main.bce5a39b.css",
-    "main.js": "/retropokedex/static/js/main.5fe7322a.js",
+    "main.css": "/retropokedex/static/css/main.417a897c.css",
+    "main.js": "/retropokedex/static/js/main.30043c62.js",
     "static/js/787.20ea48e4.chunk.js": "/retropokedex/static/js/787.20ea48e4.chunk.js",
     "static/media/background.jpg": "/retropokedex/static/media/background.d9a21c05f3c8a3e4899d.jpg",
     "static/media/Type_Psychic.webp": "/retropokedex/static/media/Type_Psychic.0902bdbf251a55d32350.webp",
@@ -25,13 +25,14 @@
     "static/media/Type_Ghost.webp": "/retropokedex/static/media/Type_Ghost.4e76c7a62425d246bc57.webp",
     "static/media/Type_Steel.webp": "/retropokedex/static/media/Type_Steel.7796fcdc72bcae597fe2.webp",
     "index.html": "/retropokedex/index.html",
+    "static/media/return-arrow.svg": "/retropokedex/static/media/return-arrow.14c5c27cca047977b3f49f053851db1e.svg",
     "static/media/Type_Uknown.webp": "/retropokedex/static/media/Type_Uknown.c8ef84d52de842da1e96.webp",
-    "main.bce5a39b.css.map": "/retropokedex/static/css/main.bce5a39b.css.map",
-    "main.5fe7322a.js.map": "/retropokedex/static/js/main.5fe7322a.js.map",
+    "main.417a897c.css.map": "/retropokedex/static/css/main.417a897c.css.map",
+    "main.30043c62.js.map": "/retropokedex/static/js/main.30043c62.js.map",
     "787.20ea48e4.chunk.js.map": "/retropokedex/static/js/787.20ea48e4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bce5a39b.css",
-    "static/js/main.5fe7322a.js"
+    "static/css/main.417a897c.css",
+    "static/js/main.30043c62.js"
   ]
 }
